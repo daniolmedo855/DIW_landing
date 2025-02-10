@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <header>
+        <nav class="w-full bg-black opacity-80"> 
+            <ul class="w-[90%] flex justify-between md:justify-center items-center flex-col md:flex-row text-center mx-auto py-5 text-white text-lg font-bold">
+                <li class="hidden md:mx-5 md:block order-2 md:order-1"><a href="#">REINOS</a></li>
+                <li class="hidden md:mx-5 md:block order-2 md:order-2"><a href="#">HISTORIA</a></li>
+                <div class="md:mx-5 flex items-center justify-between md:justify-center w-full md:w-auto order-1 md:order-3">
+                    <li><img src="./img/logo.png" alt="" class="max-w-[100px] hover:drop-shadow-[0px_0px_5px_white] duration-300"></li>
+                    <li class="block md:hidden"><img src="./img/menu.svg" alt="" class="w-[30px] invert menu"></li>
+                </div>
+                <li class="hidden md:mx-5 md:block order-2 md:order-4"><a href="#">CASAS</a></li>
+                <li class="hidden md:mx-5 md:block order-2 md:order-5"><a href="#">PERSONAJES</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main></main>
+    <footer></footer>
+
+    <script>
+        console.log(document.querySelectorAll('ul>li'))
+        document.querySelector('.menu').addEventListener('click', () => {
+            document.querySelectorAll('ul>li').forEach(li => {
+                li.classList.toggle('hidden');
+            })
+        })
+    </script>
+</body>
+</html>
