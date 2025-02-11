@@ -8,4 +8,26 @@ body{
     font-family: "Cinzel Decorative", serif;
 }
 
+#casas{
+    overflow: hidden;
+    >div{
+        >div{
+            flex: 1;
+            transition: flex 0.2s;
+            >div{
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        >div:hover{
+            flex: 3;
+            >div{
+                display: flex;
+            }
+        }
+    }
+}
+
   

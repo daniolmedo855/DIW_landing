@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -20,7 +20,7 @@
                     <li><img src="./img/logo.png" alt="" class="max-w-[80px] hover:drop-shadow-[0px_0px_5px_grey] duration-300"></li>
                     <li class="block md:hidden"><img src="./img/menu.svg" alt="" class="w-[30px] invert menu"></li>
                 </div>
-                <li class="hidden mx-0 md:mx-5 md:block order-2 md:order-4 mb-5 md:mb-0 border-b-1 border-white md:border-0 w-full md:w-auto hover:text-red-600 duration-300"><a href="#">CASAS</a></li>
+                <li class="hidden mx-0 md:mx-5 md:block order-2 md:order-4 mb-5 md:mb-0 border-b-1 border-white md:border-0 w-full md:w-auto hover:text-red-600 duration-300"><a href="#casas">CASAS</a></li>
                 <li class="hidden mx-0 md:mx-5 md:block order-2 md:order-5 mb-5 md:mb-0 border-b-1 border-white md:border-0 w-full md:w-auto hover:text-red-600 duration-300"><a href="#">PERSONAJES</a></li>
             </ul>
         </nav>
@@ -32,14 +32,102 @@
                 <a href="#historia" class="text-white text-sm md:text-md font-bold p-3 bg-red-600 rounded-xl hover:bg-red-700 hover:translate-x-6 duration-300">VER MAS -></a>
             </div>
         </section>
-        <section id="mundo" class="container">
-            <div>
-                <div>
-                    <h3>PONIENTE</h3>
-                    <p></p>
-                    <a href=""></a>
+
+        <section id="mundo" class="mt-40">
+            <h2 class="text-red-600 text-5xl md:text-6xl font-bold mb-5 text-center mb-10">MUNDO CONOCIDO</h2>
+            
+            <div class="flex justify-center items-center w-full mx-auto mb-20">
+                <div class="w-[80%] mx-auto flex justify-center items-center flex-col xl:flex-row">
+                    <div class="w-full xl:w-1/2 my-auto z-1 bg-white xl:shadow-2xl transform translate-x-0 xl:translate-x-[20%] p-0 xl:p-6 mb-10 xl:mb-auto rounded-xl">
+                        <h3 class="text-red-600 text-center xl:text-left text-3xl font-bold mb-5">PONIENTE</h3>
+                        <p class="text-justify my-5">Poniente es un vasto y misterioso continente lleno de antiguas casas nobles, intrigas políticas y una historia marcada por luchas por el poder. Desde las heladas tierras del Norte, donde los inviernos son implacables, hasta las soleadas tierras del Sur, dominadas por el majestuoso Trono de Hierro, Poniente es un lugar donde cada región tiene su propia cultura, tradiciones y, por supuesto, sus ambiciones. A lo largo de los siglos, los habitantes de Poniente han sido testigos de traiciones, guerras, alianzas y secretos oscuros, todo en nombre del control del reino. ¿Estás preparado para conocer sus secretos más profundos?</p>
+                        <a href="#mundo" class="text-white text-sm md:text-md font-bold p-3 bg-red-600 rounded-xl  hover:bg-red-700 hover:translate-x-6 duration-300">VER MAS -></a>
+                    </div>
+                    <img src="./img/mapas/mapa_poniente.webp" alt="" class="w-full xl:w-[600px] h-[600px] transform translate-x-0  xl:translate-x-[-20%] z-0 object-cover">
                 </div>
-                <img src="./img/mapas/mapa_poniente.webp" alt="" class="">
+            </div>
+
+            <div class="flex justify-center items-center w-full mx-auto mb-30">
+                <div class="w-[80%] mx-auto flex justify-center items-center flex-col xl:flex-row">
+                    <img src="./img/mapas/mapa_essos.webp" alt="" class="order-2 xl:order-1 w-full xl:w-[600px] h-[600px] transform translate-x-0  xl:translate-x-[20%] z-0 object-cover">
+                    <div class="order-1 xl:order-2 w-full xl:w-1/2 my-auto z-1 bg-white xl:shadow-2xl transform translate-x-0 xl:translate-x-[-20%] p-0 xl:p-6 mb-10 xl:mb-auto rounded-xl">
+                        <h3 class="text-red-600 text-center xl:text-left text-3xl font-bold mb-5">ESSOS</h3>
+                        <p class="text-justify my-5">Essos, el vasto continente que se extiende al este de Poniente, es un lugar de culturas exóticas, intriga y vastas tierras desconocidas. Desde las antiguas ciudades libres del oeste, como Braavos y Volantis, hasta las remotas y misteriosas tierras de Asshai y Yi Ti, Essos es un mundo de contrastes. Sus desiertos ardiendo, selvas impenetrables y mares inquietos esconden secretos olvidados por generaciones.</p>
+                        <a href="#mundo" class="text-white text-sm md:text-md font-bold p-3 bg-red-600 rounded-xl  hover:bg-red-700 hover:translate-x-6 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-black w-full h-[200px]">
+                <div class="w-[80%] xl:w-[60%] mx-auto h-full flex justify-center items-center xl:items-start flex-col">
+                    <h3 class="text-white text-center xl:text-left text-3xl xl:text-4xl font-bold mb-2">DESCUBRE EL RESTO A TRAVES DE LOS LIBROS</h3>
+                    <a href="#mundo" class="w-auto text-white text-sm border-white border-1 rounded px-4 py-1 md:text-md font-bold duration-300 hover:bg-white hover:text-red-600">COMPRAR</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="casas" class="relative w-full group hover:cursor-pointer mt-40 lg:mt-0">
+            <h2 class="transform lg:absolute lg:top-[30%] lg:left-[50%] lg:-translate-x-1/2 lg:-translate-y-1/2 text-red-600 text-5xl md:text-6xl w-full text-center bg-white text-red-600 lg:text-white font-bold lg:bg-black/60 py-5 ease-out lg:group-hover:translate-x-[100%] duration-300 mb-10 lg:mb-0">Conoce las casas de los 7 reinos</h2>
+            
+            <div class="w-full flex flex-col lg:flex-row">
+                <div class="bg-[url(./img/casas/casa_targaryen.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5 py-2 lg:py-0">
+                        <h3 class="text-red-800 text-3xl font-bold">CASA TARGARYEN</h3>
+                        <p class="text-justify my-5 text-white">La Casa Targaryen es una casa noble de ascendencia Valyria que reinó durante casi trescientos años los Siete Reinos de Poniente.</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-red-800 rounded-xl  hover:bg-red-900 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+                <div class="bg-[url(./img/casas/casa_martell.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:min-h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5  py-2 lg:py-0">
+                        <h3 class="text-red-600 text-3xl font-bold">CASA MARTELL</h3>
+                        <p class="text-justify my-5 text-white">La Casa Nymeros Martell de Lanza del Sol es la casa gobernante de Dorne.</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-red-600 rounded-xl  hover:bg-red-800 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+                
+                <div class="bg-[url(./img/casas/casa_tyrell.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:min-h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5  py-2 lg:py-0">
+                        <h3 class="text-red-300 text-3xl font-bold">CASA TYRELL</h3>
+                        <p class="text-justify my-5 text-white">La Casa Tyrell de Altojardín es la casa gobernante del Dominio. Su asentamiento es Altojardín.</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-red-300 rounded-xl hover:bg-red-500 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+                <div class="bg-[url(./img/casas/casa_lannister.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:min-h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5 py-2 lg:py-0">
+                        <h3 class="text-orange-400 text-3xl font-bold">CASA LANNISTER</h3>
+                        <p class="text-justify my-5 text-white">La Casa Lannister de Roca Casterly es la principal casa noble de las Tierras del Oeste.</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-orange-400 rounded-xl  hover:bg-orange-700 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+                
+                <div class="bg-[url(./img/casas/casa_baratheon.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:min-h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5 py-2 lg:py-0">
+                        <h3 class="text-yellow-600 text-3xl font-bold">CASA BARATHEON</h3>
+                        <p class="text-justify my-5 text-white">La Casa Baratheon de Bastión de Tormentas es una casa noble de las Tierras de la Tormenta.</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-yellow-600 rounded-xl  hover:bg-yellow-700 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+                <div class="bg-[url(./img/casas/casa_velaryon.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:min-h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5 py-2 lg:py-0">
+                        <h3 class="text-yellow-300 text-3xl font-bold">CASA VELARYION</h3>
+                        <p class="text-justify my-5 text-white">La Casa Velaryon de Marcaderiva es una casa noble de las Tierras de la Corona y vasalla de la Casa Baratheon de Rocadragón.</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-yellow-300 rounded-xl  hover:bg-yellow-500 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+                <div class="bg-[url(./img/casas/casa_hightower.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:min-h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5 py-2 lg:py-0">
+                        <h3 class="text-blue-700 text-3xl font-bold">CASA HIGHTOWER</h3>
+                        <p class="text-justify my-5 text-white">La Casa Hightower del Faro es una de las casas más antiguas de Poniente y uno de los vasallos más poderosos e importantes de la Casa Tyrell</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-blue-700 rounded-xl  hover:bg-blue-900 duration-300">VER MAS -></a>
+                    </div>
+                </div>
+                <div class="bg-[url(./img/casas/casa_stark.jpg)] bg-cover bg-bottom w-full lg:w-auto min-h-[200px] lg:min-h-[90vh] flex justify-center items-center ">
+                    <div class="bg-black/60 h-full w-full px-5 py-2 lg:py-0">
+                        <h3 class="text-blue-200 text-3xl font-bold">CASA STARK</h3>
+                        <p class="text-justify my-5 text-white">La Casa Stark de Invernalia es una casa noble del Norte. Su asentamiento es Invernalia.</p>
+                        <a href="#casas" class="text-white text-sm md:text-md font-bold p-3 bg-blue-200 rounded-xl  hover:bg-blue-400 hover:translate-x-6 duration-300">VER MAS -></a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
